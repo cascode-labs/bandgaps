@@ -1,0 +1,20 @@
+
+SOA warnings go to log-file: /workspaces/prjs/bandgapReferenceCircuit/tests/dc_op/simulation/bandgap_1v_v01_dcop_testbench.soa.log
+
+Note: Compatibility modes selected: hs a
+
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Circuit: ** sch_path:
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Note: v1: dc value used for op instead of transient time=0 value.
+
+No. of Data Rows : 1
+ASCII raw file "/workspaces/prjs/bandgapReferenceCircuit/tests/dc_op/simulation/bandgap_1v_v01_dcop_testbench.raw"
+vdd = 1.800000e+00
+vbg = 9.638683e-01
+ngspice-39 done

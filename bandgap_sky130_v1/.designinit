@@ -1,0 +1,4 @@
+#!/bin/bash
+export PDK=sky130A
+export PDKPATH=$PDK_ROOT/$PDK
+export STD_CELL_LIBRARY=sky130_fd_sc_hd

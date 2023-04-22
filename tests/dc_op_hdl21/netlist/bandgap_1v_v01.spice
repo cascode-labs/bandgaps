@@ -1,0 +1,88 @@
+** sch_path: /workspaces/prjs/bandgapReferenceCircuit/bandgap_sky130_v1/bandgap_1v_v01.sch
+**.subckt bandgap_1v_v01
+*  Q2 -  pnp_05v5  IS MISSING !!!!
+*  l5 -  lab_pin  IS MISSING !!!!
+*  Vr4 -  ammeter  IS MISSING !!!!
+*  Vr2 -  ammeter  IS MISSING !!!!
+*  Vr1 -  ammeter  IS MISSING !!!!
+*  Vq2 -  ammeter  IS MISSING !!!!
+*  Q1 -  pnp_05v5  IS MISSING !!!!
+*  l4 -  lab_pin  IS MISSING !!!!
+*  l10 -  lab_pin  IS MISSING !!!!
+*  R1 -  res_xhigh_po_0p35  IS MISSING !!!!
+*  R2 -  res_xhigh_po_0p35  IS MISSING !!!!
+*  R3 -  res_xhigh_po_0p35  IS MISSING !!!!
+*  r9 -  ngspice_probe  IS MISSING !!!!
+*  R6 -  res_xhigh_po_0p35  IS MISSING !!!!
+*  l2 -  lab_pin  IS MISSING !!!!
+*  p3 -  iopin  IS MISSING !!!!
+*  C2 -  capa  IS MISSING !!!!
+*  l7 -  vdd  IS MISSING !!!!
+*  Vm1 -  ammeter  IS MISSING !!!!
+*  Vm2 -  ammeter  IS MISSING !!!!
+*  l11 -  lab_wire  IS MISSING !!!!
+*  M1 -  pfet_01v8_lvt  IS MISSING !!!!
+*  M2 -  pfet_01v8_lvt  IS MISSING !!!!
+*  r7 -  ngspice_probe  IS MISSING !!!!
+*  r20 -  ngspice_get_value  IS MISSING !!!!
+*  r21 -  ngspice_get_value  IS MISSING !!!!
+*  M10 -  nfet_01v8_lvt  IS MISSING !!!!
+*  l15 -  lab_pin  IS MISSING !!!!
+*  Vm3 -  ammeter  IS MISSING !!!!
+*  M3 -  pfet_01v8_lvt  IS MISSING !!!!
+*  r22 -  ngspice_get_value  IS MISSING !!!!
+*  l3 -  lab_pin  IS MISSING !!!!
+*  p4 -  iopin  IS MISSING !!!!
+*  p5 -  iopin  IS MISSING !!!!
+*  p1 -  iopin  IS MISSING !!!!
+*  p2 -  lab_wire  IS MISSING !!!!
+*  p6 -  lab_wire  IS MISSING !!!!
+*  p7 -  lab_wire  IS MISSING !!!!
+x1 net5 net1 net12 net15 net16 amplifier_v01
+*  l1 -  lab_pin  IS MISSING !!!!
+**.ends
+
+* expanding   symbol:  amplifier_v01.sym # of pins=5
+** sym_path: /workspaces/prjs/bandgapReferenceCircuit/bandgap_sky130_v1/amplifier_v01.sym
+** sch_path: /workspaces/prjs/bandgapReferenceCircuit/bandgap_sky130_v1/amplifier_v01.sch
+.subckt amplifier_v01 plus minus vout VDD GND
+*  M5 -  nfet_01v8_lvt  IS MISSING !!!!
+*  M6 -  nfet_01v8_lvt  IS MISSING !!!!
+*  M9 -  nfet_01v8_lvt  IS MISSING !!!!
+*  l2 -  lab_pin  IS MISSING !!!!
+*  l12 -  lab_pin  IS MISSING !!!!
+*  l18 -  lab_pin  IS MISSING !!!!
+*  M7 -  nfet_01v8_lvt  IS MISSING !!!!
+*  M13 -  pfet_01v8_lvt  IS MISSING !!!!
+*  r3 -  ngspice_probe  IS MISSING !!!!
+*  r4 -  ngspice_probe  IS MISSING !!!!
+*  r6 -  ngspice_probe  IS MISSING !!!!
+*  r16 -  ngspice_get_value  IS MISSING !!!!
+*  r17 -  ngspice_get_value  IS MISSING !!!!
+*  r18 -  ngspice_get_value  IS MISSING !!!!
+*  r19 -  ngspice_get_value  IS MISSING !!!!
+*  r10 -  ngspice_get_value  IS MISSING !!!!
+*  r11 -  ngspice_get_value  IS MISSING !!!!
+*  r12 -  ngspice_get_value  IS MISSING !!!!
+*  r13 -  ngspice_get_value  IS MISSING !!!!
+*  r14 -  ngspice_get_value  IS MISSING !!!!
+*  r15 -  ngspice_get_value  IS MISSING !!!!
+*  r23 -  ngspice_get_value  IS MISSING !!!!
+*  r27 -  ngspice_probe  IS MISSING !!!!
+*  l14 -  gnd  IS MISSING !!!!
+*  M4 -  pfet_01v8_lvt  IS MISSING !!!!
+*  M8 -  pfet_01v8_lvt  IS MISSING !!!!
+*  l17 -  gnd  IS MISSING !!!!
+*  p1 -  ipin  IS MISSING !!!!
+*  p2 -  ipin  IS MISSING !!!!
+*  p3 -  opin  IS MISSING !!!!
+*  l1 -  lab_pin  IS MISSING !!!!
+*  l3 -  lab_pin  IS MISSING !!!!
+*  l4 -  lab_pin  IS MISSING !!!!
+*  p4 -  iopin  IS MISSING !!!!
+*  p5 -  iopin  IS MISSING !!!!
+*  l5 -  lab_pin  IS MISSING !!!!
+*  l6 -  lab_pin  IS MISSING !!!!
+.ends
+
+.end

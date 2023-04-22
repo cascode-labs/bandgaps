@@ -1,0 +1,4 @@
+#!/bin/bash
+export PDK=gf180mcuC
+export PDKPATH=$PDK_ROOT/$PDK
+export STD_CELL_LIBRARY=gf180mcu_fd_sc_mcu7t5v0
