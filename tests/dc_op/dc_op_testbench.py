@@ -1,7 +1,7 @@
-from pathlib import path
+from pathlib import Path
 
 import hdl21 as h
-from hdl21.sim import Op, Include, Save, SaveMode
+from hdl21.sim import Op, Include, Save, SaveMode, sim
 import sky130
 from vlsir import spice
 
@@ -14,7 +14,7 @@ bandgap = h.SchematicModule(
 )
 
 
-@hs.sim
+@sim
 class BandgapDcopSim:
     """# Bandgap DC Operating Point Simulation Input"""
 
