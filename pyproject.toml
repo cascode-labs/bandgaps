@@ -3,8 +3,8 @@ name = "bandgaps"
 version = "0.1.0"
 authors = [
    {name="Curtis Mayberry", email="Curtisma3@gmail.com"},
-   {name="Yulin Deng", email=""},
-   {name="Thomas Pluck", email=""},
+   {name="Yulin Deng"},
+   {name="Thomas Pluck"},
 ]
 readme = "README.md"
 license = {file="LICENSE"}
