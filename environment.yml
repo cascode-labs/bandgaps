@@ -24,4 +24,5 @@ dependencies:
   - pip
   - pip:
     - spyci==1.0.2
-    
+    - hdl21==4.0.0
+    - hdl21schematicimporter==1.0.dev0

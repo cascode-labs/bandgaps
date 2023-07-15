@@ -12,6 +12,7 @@ dependencies:
   - jupyter=1.0.0
   - ipytest=0.12.0
   - rich=13.3.3
+  - ngspice=38
   # Dev
   - pytest
   - coverage
@@ -20,5 +21,6 @@ dependencies:
   - black
   - pip
   - pip:
-    - spyci
-    
+    - spyci==1.0.2
+    - hdl21==4.0.0
+    - hdl21schematicimporter==1.0.dev0
