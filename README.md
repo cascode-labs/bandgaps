@@ -7,6 +7,14 @@
 
 A collection of open-source bandgaps in both the SKY130 and and gf180mcu processes.  The bandgaprs share a common test configuration.
 
+## Getting Started
+This repo runs in a devcontainer.  The easiest way os to open it in a 
+[GitHub codepace](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/cascode-labs/bandgaps).  You can also also 
+[run it locally in vscode](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/cascode-labs/bandgaps)
+but you will need to have Docker installed.
+
+## Designs
+
 ### bandgap_sky130_v1
 
 A bandgap reference in Skywater sky130 process.
@@ -16,4 +24,4 @@ A bandgap reference in Skywater sky130 process.
 A bandgap reference in Global Foundries 180mcu process.
 
 ## Testing
-Run the tests using pytest.
+Run the sims and tests using pytest.
