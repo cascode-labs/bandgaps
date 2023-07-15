@@ -1,5 +1,11 @@
 {
    "recommendations": [
-      "ms-vscode-remote.vscode-remote-extensionpack"
+      "ms-vscode-remote.vscode-remote-extensionpack",
+      "ms-python.python",
+      "donjayamanne.python-environment-manager",
+      "yzhang.markdown-all-in-one",
+      "DavidAnson.vscode-markdownlint",
+      "mhutchie.git-graph",
+      "cschleiden.vscode-github-actions"
    ]
 }
