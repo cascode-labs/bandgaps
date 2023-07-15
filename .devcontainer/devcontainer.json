@@ -24,7 +24,10 @@
 			"extensions": [
 				"ms-python.python",
 				"donjayamanne.python-environment-manager",
-				"yzhang.markdown-all-in-one"
+				"yzhang.markdown-all-in-one",
+				"DavidAnson.vscode-markdownlint",
+				"mhutchie.git-graph",
+				"cschleiden.vscode-github-actions"
 			]
 	},
 
