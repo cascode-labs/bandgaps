@@ -24,8 +24,8 @@
 			"extensions": [
 				"ms-python.python",
 				"donjayamanne.python-environment-manager",
-				"yzhang.markdown-all-in-one",
-				"DavidAnson.vscode-markdownlint",
+				// "yzhang.markdown-all-in-one",
+				// "DavidAnson.vscode-markdownlint",
 				"mhutchie.git-graph",
 				"cschleiden.vscode-github-actions"
 			]
@@ -33,5 +33,5 @@
 	},
 
 	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "root"
+	// "remoteUser": "root"
 }
