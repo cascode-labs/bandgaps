@@ -10,7 +10,7 @@ readme = "README.md"
 license = {file="LICENSE"}
 description = "A set of open-source bandgap circuits"
 keywords = ["hardware", "analog"]
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 classifiers = [
     "Topic :: System :: Hardware",
     "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
@@ -22,12 +22,29 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
 ]
 
+dependencies = [
+    "viper-ic",
+    "hdl21 == 5.0.0",
+    "vlsir == 5.0.0",
+    "pytest == 8.2.0",
+    "sky130-hdl21 == 5.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mkdocs-material == 9.5",
+  "mkdocs-click == 0.8",
+]
+
 [project.urls]
 "Home" = "https://github.com/cascode-labs/bandgaps"
 "Documentation" = "https://github.com/cascode-labs/bandgaps"
 "Source" = "https://github.com/cascode-labs/bandgaps"
 
-[tools.viper.libraries.bandgap_sky130_v1]
+[tool.viper.libraries.bandgap_sky130_v1]
 path = "bandgap_sky130_v1"
 process = "sky130A"
 
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
