@@ -6,7 +6,7 @@
 
 # Bandgaps
 
-A collection of open-source bandgaps in both the SKY130 and and gf180mcu processes.  The bandgaprs share a common test configuration.
+A collection of open-source bandgaps in both the SKY130 and and gf180mcu processes.  The bandgaps share a common test configuration.
 
 ## Getting Started
 

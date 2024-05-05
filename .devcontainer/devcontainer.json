@@ -1,6 +1,6 @@
 {
 	"name": "viper-ic",
-	"image": "ghcr.io/cascode-labs/viper-osic-docker-analog/osic-docker-analog",
+	"image": "ghcr.io/cascode-labs/viper-osic-docker-analog/osic-docker-analog:v0.1",
 
 	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
 	"features": {
@@ -28,8 +28,8 @@
 			"extensions": [
 				"ms-python.python",
 				"donjayamanne.python-environment-manager",
-				"yzhang.markdown-all-in-one",
-				"DavidAnson.vscode-markdownlint",
+				// "yzhang.markdown-all-in-one",
+				// "DavidAnson.vscode-markdownlint",
 				"mhutchie.git-graph",
 				"cschleiden.vscode-github-actions",
 				"tamasfe.even-better-toml"
@@ -38,5 +38,5 @@
 	},
 
 	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "root"
+	// "remoteUser": "root"
 }
