@@ -10,7 +10,16 @@ readme = "README.md"
 license = {file="LICENSE"}
 description = "A set of open-source bandgap circuits"
 keywords = ["hardware", "analog"]
-requires-python = ">=3.8"
+requires-python = ">=3.10"
+dependencies = [
+    "viper-ic",
+    "hdl21 == 5.0.0",
+    "pytest == 8.2.0",
+    "sky130-hdl21 == 5.0.0",
+    "pandas == 2.2.2",
+    "matplotlib == 3.8.4",
+]
+
 classifiers = [
     "Topic :: System :: Hardware",
     "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",

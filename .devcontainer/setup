@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+uv venv .venv
+.venv/bin/activate
+uv pip install -e .
