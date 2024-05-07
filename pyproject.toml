@@ -11,7 +11,7 @@ license = {file="LICENSE"}
 description = "A set of open-source bandgap circuits"
 keywords = ["hardware", "analog"]
 requires-python = ">=3.10"
-<<<<<<< HEAD
+
 dependencies = [
     "viper-ic",
     "hdl21 == 5.0.0",
@@ -21,8 +21,6 @@ dependencies = [
     "matplotlib == 3.8.4",
 ]
 
-=======
->>>>>>> bd48b8d5228de005337b73c667cd5f9bad0abc4f
 classifiers = [
     "Topic :: System :: Hardware",
     "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
@@ -32,14 +30,6 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
-]
-
-dependencies = [
-    "viper-ic",
-    "hdl21 == 5.0.0",
-    "vlsir == 5.0.0",
-    "pytest == 8.2.0",
-    "sky130-hdl21 == 5.0.0",
 ]
 
 [project.optional-dependencies]
