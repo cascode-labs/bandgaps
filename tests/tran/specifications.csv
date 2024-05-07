@@ -1,0 +1,3 @@
+Parameter, Min, Nom, Max, Definition
+vbg_tran, 1.1, 1.2, 1.3, VT(vbg)
+I_vdd_tran,,,,IT(vdd)
