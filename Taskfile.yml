@@ -1,0 +1,19 @@
+# https://taskfile.dev/
+version: '3'
+tasks:
+  netlist:
+    desc: Netlist all schematics
+    cmds:
+      - scripts/netlist
+  docs:
+    desc: Serve docs under development
+    cmds:
+      - mkdocs serve
+  setup:
+    desc: Setup a python venv using uv
+    cmds:
+      - scripts/setup
+  default:
+    desc: List all tasks
+    cmds:
+      - task --list-all

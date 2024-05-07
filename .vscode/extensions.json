@@ -6,6 +6,8 @@
       "yzhang.markdown-all-in-one",
       "DavidAnson.vscode-markdownlint",
       "mhutchie.git-graph",
-      "cschleiden.vscode-github-actions"
+      "cschleiden.vscode-github-actions",
+      "mechatroner.rainbow-csv",
+      "redhat.vscode-yaml"
    ]
 }

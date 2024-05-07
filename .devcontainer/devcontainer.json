@@ -15,7 +15,7 @@
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	"postCreateCommand": "./setup",
+	// "postCreateCommand": "./setup",
 	"containerEnv": {
 		// Sets the display variable to use x-forwarding to enable graphical apps
 		//"DISPLAY": "host.docker.internal:0.0" // Windows OS
@@ -29,10 +29,10 @@
 			"extensions": [
 				"ms-python.python",
 				"donjayamanne.python-environment-manager",
-				// "yzhang.markdown-all-in-one",
-				// "DavidAnson.vscode-markdownlint",
 				"mhutchie.git-graph",
-				"cschleiden.vscode-github-actions"
+				"cschleiden.vscode-github-actions",
+				"mechatroner.rainbow-csv",
+				"redhat.vscode-yaml"
 			]
 		}
 	},

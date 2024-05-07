@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Netlist all schematics
+mkdir .viper
+SCH_FILE="bandgap_sky130_v1/bandgap_1v_v01/bandgap_1v_v01"
+xschem \
+    --netlist --spice --no_x \
+    -o .viper/netlists/${SCH_FILE}.spice \
+    ${SCH_FILE}.sch
