@@ -3,7 +3,7 @@ import hdl21
 from hdl21.sim import sim, Op, Include, Lib
 from hdl21.external_module import ExternalModule
 from hdl21.primitives import Vdc, Cap, IdealCapacitorParams
-from hdl21.schematic.xschem_schematic import XschemSchematic
+from viper.schematics.XschemSchematic import XschemSchematic
 from hdl21.prefix import f
 import viper.config.oshic_sitepdks as _
 import sky130
@@ -34,7 +34,7 @@ class DcOpTestbench:
             hdl21.Input(name="GND"),
         ],
         desc="1v bandgap reference",
-        )(vbg=C_load.p, VDD=vdd.p, GND=VSS)
+    )(vbg=C_load.p, VDD=vdd.p, GND=VSS)
 
 @sim
 class DcOpSim:
