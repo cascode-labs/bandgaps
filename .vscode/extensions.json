@@ -8,5 +8,7 @@
       "mhutchie.git-graph",
       "cschleiden.vscode-github-actions",
       "tamasfe.even-better-toml"
+      "mechatroner.rainbow-csv",
+      "redhat.vscode-yaml"
    ]
 }

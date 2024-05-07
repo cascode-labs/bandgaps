@@ -1,14 +1,19 @@
+# https://taskfile.dev/
 version: '3'
 tasks:
-  default:
-    desc: List all tasks
+  netlist:
+    desc: Netlist all schematics
     cmds:
-      - task --list-all
+      - scripts/netlist
   docs:
     desc: Serve docs under development
     cmds:
       - mkdocs serve
-  netlist:
-    desc: netlist all the bandgaps
+  setup:
+    desc: Setup a python venv using uv
     cmds:
-      - ngspice
+      - scripts/setup
+  default:
+    desc: List all tasks
+    cmds:
+      - task --list-all

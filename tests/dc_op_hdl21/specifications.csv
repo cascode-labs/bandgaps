@@ -1,0 +1,3 @@
+Parameter, Min, Nom, Max, Definition
+vbg, 1.1, 1.2, 1.3, VDC(vbg)
+V_vdd,1.6,1.8,2.0,VDC(vdd)

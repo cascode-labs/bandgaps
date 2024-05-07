@@ -1,0 +1,5 @@
+Parameter, Nominal, Corners
+temperature, 25, -30 25 85
+supply, 1.8,1.6 1.8 2.0
+process, TT, FF FS TT SF SS
+
