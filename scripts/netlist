@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # Netlist all schematics
-mkdir -p .viper
+mkdir -p .viper/netlists
 SCH_FILE="bandgaps/bandgap_sky130_v1/bandgap_1v_v01/bandgap_1v_v01"
 xschem \
-    --netlist --spice --no_x \
-    -o .viper/netlists/${SCH_FILE}.spice \
+    --netlist --spice --no_x --quit \
+    --rcfile xschemrc \
+    -o .viper/netlists/test.spice \
     ${SCH_FILE}.sch
