@@ -6,7 +6,7 @@ from typing import Dict
 import numpy as np
 from rawread import rawread
 from pytest import fixture
-
+from viper.results import NgspiceResultReader
 
 @fixture
 def tran_result() -> Dict[str, list]:
@@ -14,6 +14,8 @@ def tran_result() -> Dict[str, list]:
     deg0 = "tsmc_bandgap_real_0degc_vbg.raw"
     deg27 = "tsmc_bandgap_real_27degc_vbg.raw"
     deg70 = "tsmc_bandgap_real_70degc_vbg.raw"
+
+    result = NgspiceResultReader.read_raw_file()
 
     # Parse rawread output into time and V_bg
     def parse_raw_read(raw_read):
