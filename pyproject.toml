@@ -19,6 +19,9 @@ dependencies = [
     "sky130-hdl21 == 5.0.0",
     "pandas == 2.2.2",
     "matplotlib == 3.8.4",
+    "ipytest == 0.14.2",
+    "spyci == 1.0.2",
+    "hdl21schematicimporter == 1.0.dev0"
 ]
 
 classifiers = [

@@ -14,9 +14,17 @@
 	 },
 
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [6080, 5901],
+	"portsAttributes": {
+	  "6080": {
+		 "label": "desktop - noVNC"
+	  },
+	  "5901": {
+		 "label": "desktop - VNC"
+	  }
+	},
 
-	"postCreateCommand": "./setup",
+	"postCreateCommand": ".devcontainer/setup",
 	"containerEnv": {
 		// Sets the display variable to use x-forwarding to enable graphical apps
 		//"DISPLAY": "host.docker.internal:0.0" // Windows OS

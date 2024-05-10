@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # Runs as a postCreateCommand, once at the end of devcontainer creation
 gh repo clone cascode-labs/viper workspaces/viper
-
+uv venv .venv
+uv pip install -e ../viper
+uv pip install -e .[dev]
