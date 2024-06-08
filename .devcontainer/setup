@@ -1,7 +1,25 @@
 #!/usr/bin/env bash
 # Runs as a postCreateCommand, once at the end of devcontainer creation
-gh repo clone cascode-labs/viper /workspaces/viper
+set -e
+
 uv venv .venv
 source .venv/bin/activate
+
+# HDL21 Dev Env
+git clone https://github.com/cascode-labs/Hdl21.git /workspaces/Hdl21
+git clone https://github.com/cascode-labs/Vlsir.git /workspaces/Vlsir
+cd /workspaces/Vlsir
+
+
+scripts/build.sh --python
+cd /workspaces/bandgaps
+
+# gh repo clone cascode-labs/viper /workspaces/viper
+git clone https://github.com/cascode-labs/viper.git /workspaces/viper
+
+
+git clone https://github.com/cascode-labs/OpenFASOC.git /workspaces/OpenFASOC
+
+uv pip install -e /workspaces/Vlsir/VlsirTools
 uv pip install -e ../viper
 uv pip install -e .[dev]
