@@ -7,8 +7,9 @@
       "DavidAnson.vscode-markdownlint",
       "mhutchie.git-graph",
       "cschleiden.vscode-github-actions",
-      "tamasfe.even-better-toml"
+      "tamasfe.even-better-toml",
       "mechatroner.rainbow-csv",
-      "redhat.vscode-yaml"
+      "redhat.vscode-yaml",
+      "barakh.vscode-xschem-viewer"
    ]
 }
