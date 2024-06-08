@@ -25,11 +25,11 @@
 	},
 
 	"postCreateCommand": ".devcontainer/setup",
-	"containerEnv": {
+	// "containerEnv": {
 		// Sets the display variable to use x-forwarding to enable graphical apps
 		//"DISPLAY": "host.docker.internal:0.0" // Windows OS
 		//"DISPLAY": "docker.for.mac.host.internal:0" // MAC OS
-	},
+	// },
 	// 👇 Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -41,7 +41,8 @@
 				"mhutchie.git-graph",
 				"cschleiden.vscode-github-actions",
 				"mechatroner.rainbow-csv",
-				"redhat.vscode-yaml"
+				"redhat.vscode-yaml",
+				"barakh.vscode-xschem-viewer"
 			]
 		},
 		"codespaces": {
@@ -54,5 +55,6 @@
 	}
 
 	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	// "remoteUser": "root"+
+
 }
