@@ -7,6 +7,10 @@ tasks:
     cmds:
       - echo ${XSCHEM_USER_LIBRARY_PATH}
       - scripts/netlist
+  sim:
+    desc: Simulate all designs
+    cmds:
+      - pytest tests/dc_op_hdl21
   docs:
     desc: Serve docs under development
     cmds:

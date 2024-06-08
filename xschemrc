@@ -35,10 +35,10 @@ append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
 append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
 
 #SKY130 version
-append XSCHEM_LIBRARY_PATH :bandgaps/bandgap_sky130_v1
-append XSCHEM_LIBRARY_PATH :bandgaps/bandgap_sky130_v1
-append XSCHEM_LIBRARY_PATH :bandgaps/bandgap_sky130_v1/amplifier_v01
-append XSCHEM_LIBRARY_PATH :bandgaps/bandgap_sky130_v1/bandgap_1v_v01
+append XSCHEM_LIBRARY_PATH :/workspaces/bandgaps/bandgaps
+append XSCHEM_LIBRARY_PATH :/workspaces/bandgaps/bandgaps/bandgap_sky130_v1
+append XSCHEM_LIBRARY_PATH :/workspaces/bandgaps/bandgaps/bandgap_sky130_v1/amplifier_v01
+append XSCHEM_LIBRARY_PATH :/workspaces/bandgaps/bandgaps/bandgap_sky130_v1/bandgap_1v_v01
 
 ###########################################################################
 #### SET CUSTOM COLORS FOR XSCHEM LIBRARIES MATCHING CERTAIN PATTERNS
@@ -66,7 +66,7 @@ set XSCHEM_START_WINDOW {sky130_tests/top.sch}
 ###########################################################################
 #### If unset $USER_CONF_DIR/simulations is assumed (normally ~/.xschem/simulations) 
 # set netlist_dir $env(HOME)/.xschem/simulations
-set netlist_dir .viper/netlists
+set netlist_dir /workspaces/bandgaps/.viper/netlists
 #### if this is set to '1' netlists and simulations will go into a simulation/ folder
 #### inside the directory containing the top level schematic. Default: not set (0)
 # set local_netlist_dir 1
@@ -447,6 +447,8 @@ append XSCHEM_LIBRARY_PATH :${PDK_ROOT}/${PDK}/libs.tech/xschem
 
 # allow a user-specific path add-on (https://github.com/iic-jku/iic-osic-tools/issues/7)
 if { [info exists ::env(XSCHEM_USER_LIBRARY_PATH) ] } {
-    append XSCHEM_LIBRARY_PATH :$env(XSCHEM_USER_LIBRARY_PATH)
+    puts stderr "XSCHEM_USER_LIBRARY_PATH: $XSCHEM_LIBRARY_PATH"
+    # append XSCHEM_LIBRARY_PATH :$env(XSCHEM_USER_LIBRARY_PATH)
 }
-puts stderr "SKYWATER_STDCELLS: $XSCHEM_LIBRARY_PATH"
+puts stderr ""
+puts stderr "XSCHEM_LIBRARY_PATH: $XSCHEM_LIBRARY_PATH"

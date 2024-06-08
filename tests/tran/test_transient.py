@@ -3,19 +3,19 @@ import sys
 sys.path.append(".")
 
 from typing import Dict
+from pathlib import Path
 import numpy as np
-from rawread import rawread
 from pytest import fixture
-from viper.results import NgspiceResultReader
+from viper.results.NgspiceResultReader import NgspiceResultReader
 
 @fixture
 def tran_result() -> Dict[str, list]:
-    path = "tests/tran/simulation"
+    path = Path("tests/tran/simulation")
     deg0 = "tsmc_bandgap_real_0degc_vbg.raw"
     deg27 = "tsmc_bandgap_real_27degc_vbg.raw"
     deg70 = "tsmc_bandgap_real_70degc_vbg.raw"
 
-    result = NgspiceResultReader.read_raw_file()
+    
 
     # Parse rawread output into time and V_bg
     def parse_raw_read(raw_read):
@@ -25,12 +25,12 @@ def tran_result() -> Dict[str, list]:
         i = [t[2] for t in out]
         return time, vbg, i
 
-    test = rawread(path + "/" + deg0)
+    # test = rawread(path / deg0)
 
     # Load .raw files and parse them
-    t1, v1, i1 = parse_raw_read(rawread(path + "/" + deg0))
-    t2, v2, i2 = parse_raw_read(rawread(path + "/" + deg27))
-    t3, v3, i3 = parse_raw_read(rawread(path + "/" + deg70))
+    t1, v1, i1 = parse_raw_read(NgspiceResultReader.read_raw_file(path / deg0))
+    t2, v2, i2 = parse_raw_read(NgspiceResultReader.read_raw_file(path / deg27))
+    t3, v3, i3 = parse_raw_read(NgspiceResultReader.read_raw_file(path / deg70))
 
     return {
         "times": [t1, t2, t3],

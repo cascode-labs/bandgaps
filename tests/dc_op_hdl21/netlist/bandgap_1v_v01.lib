@@ -1,5 +1,5 @@
 ** sch_path: /workspaces/bandgaps/bandgaps/bandgap_sky130_v1/bandgap_1v_v01/bandgap_1v_v01.sch
-**.subckt bandgap_1v_v01 porst vbg VDD GND
+.subckt bandgap_1v_v01 porst vbg VDD GND
 *.iopin vbg
 *.iopin VDD
 *.iopin GND
@@ -34,7 +34,7 @@ Vm3 net6 vbg 0
 XM3 net6 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=386.6 m=386.6
 x1 Va Vb vgate VDD GND amplifier_v01
-**.ends
+.ends
 
 * expanding   symbol:  amplifier_v01.sym # of pins=5
 ** sym_path: /workspaces/bandgaps/bandgaps/bandgap_sky130_v1/amplifier_v01/amplifier_v01.sym

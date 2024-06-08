@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -619,11 +619,11 @@ option temp=0
 tran 0.1n 20u
 option temp=70
 tran 0.1n 20u
-write ./sims/tsmc_bandgap_real_70degc_vbg.raw vbg
+write /workspaces/bandgaps/.viper/sims/tran/tsmc_bandgap_real_70degc_vbg.raw vbg
 setplot tran2
-write ./sims/tsmc_bandgap_real_0degc_vbg.raw vbg
+write /workspaces/bandgaps/.viper/sims/tran/sims/tsmc_bandgap_real_0degc_vbg.raw vbg
 setplot tran1
-write ./sims/tsmc_bandgap_real_27degc_vbg.raw vbg
+write /workspaces/bandgaps/.viper/sims/tran/sims/tsmc_bandgap_real_27degc_vbg.raw vbg
 unset askquit
 quit
 .endc
