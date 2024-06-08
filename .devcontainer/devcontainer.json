@@ -49,6 +49,15 @@
 			"repositories": {
 			  "cascode-labs/viper": {
 				"permissions": "write-all"
+			  },
+			  "cascode-labs/Hdl21": {
+				"permissions": "write-all"
+			  },
+			  "cascode-labs/Vlsir": {
+				"permissions": "write-all"
+			  },
+			  "cascode-labs/OpenFASOC": {
+				"permissions": "write-all"
 			  }
 			}
 		 }
