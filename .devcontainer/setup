@@ -5,21 +5,30 @@ set -e
 uv venv .venv
 source .venv/bin/activate
 
-# HDL21 Dev Env
-git clone https://github.com/cascode-labs/Hdl21.git /workspaces/Hdl21
+# Vlsir Dev Install
 git clone https://github.com/cascode-labs/Vlsir.git /workspaces/Vlsir
 apt-get update
 apt install -y protobuf-compiler
+# Install Rust
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf --output ~/rustup.sh
+chmod 775 ~/rustup.sh
+~/rustup.sh -y
+. "$HOME/.cargo/env"
 cd /workspaces/Vlsir
-scripts/build.sh --python
+scripts/build.sh --python --rust
+pip install /workspaces/Vlsir
 cd /workspaces/bandgaps
+code --add /workspaces/Vlsir
+uv pip install -e /workspaces/Vlsir/VlsirTools
+
+# Hdl21 Dev Install
+git clone https://github.com/cascode-labs/Hdl21.git /workspaces/Hdl21
+uv pip install -e /workspaces/Hdl21
+code add /workspaces/Hdl21
 
 # gh repo clone cascode-labs/viper /workspaces/viper
 git clone https://github.com/cascode-labs/viper.git /workspaces/viper
-
-
 git clone https://github.com/cascode-labs/OpenFASOC.git /workspaces/OpenFASOC
 
-uv pip install -e /workspaces/Vlsir/VlsirTools
 uv pip install -e ../viper
 uv pip install -e .[dev]
