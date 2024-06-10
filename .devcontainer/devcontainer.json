@@ -1,6 +1,6 @@
 {
 	"name": "viper-ic",
-	"image": "ghcr.io/cascode-labs/viper-osic-docker-analog/osic-docker-analog:v0.1",
+	"image": "ghcr.io/cascode-labs/viper-osic-docker-analog/osic-docker-analog:v0.2",
 
 	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
 	"features": {

@@ -8,9 +8,9 @@ source .venv/bin/activate
 # HDL21 Dev Env
 git clone https://github.com/cascode-labs/Hdl21.git /workspaces/Hdl21
 git clone https://github.com/cascode-labs/Vlsir.git /workspaces/Vlsir
+apt-get update
+apt install -y protobuf-compiler
 cd /workspaces/Vlsir
-
-
 scripts/build.sh --python
 cd /workspaces/bandgaps
 
